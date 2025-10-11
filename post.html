@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <!-- Navigation Bar -->
+        <nav class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/WhatsApp Image 2025-09-13 at 16.07.17_c97ed739.jpg" alt="">
+                
+            </a>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <i class="fa-solid fa-bars menu-toggle" id="openMenu"></i>
+
+        <!-- Navigation Links Container -->
+        <div class="nav-links-container" id="navLinks">
+            <!-- Close Menu Icon (Mobile) -->
+            <i class="fa-solid fa-xmark close-menu" id="closeMenu"></i>
+
+            <ul class="nav-links">
+                <!-- Home -->
+                <li class="nav-link-item">
+                    <a href="#">Home</a>
+                </li>
+
+                <!-- About Us with Dropdown -->
+                <li class="nav-link-item">
+                    <a href="#" class="dropdown-toggle">
+                        About Us <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="ourStory.html">Our Story</a></li>
+                        <li class="dropdown-menu-item"><a href="facilities.html">Facilities</a></li>
+                        <li class="dropdown-menu-item"><a href="application.html">Application</a></li>
+                    </ul>
+                </li>
+
+                
+
+                <!-- Campuses with Dropdown -->
+                <li class="nav-link-item">
+                    <a href="#" class="dropdown-toggle">
+                        Campuses <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="lwdKomarock.html">Lakewood School Komarock</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdPremier.html">Lakewood Premier School</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdEmerald.html">Lakewood Emerald</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdSeniorgirls.html">Lakewood Senior Girls</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdVantage.html">Lakewood Vantage</a></li>
+
+                    </ul>
+                </li>
+
+                <!-- Blog -->
+                <li class="nav-link-item">
+                    <a href="blog.html">Blog</a>
+                </li>
+
+                <!-- Contact Us -->
+                <li class="nav-link-item">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+                <!-- Portal -->
+                <li class="nav-link-item">
+                    <a href="portal.html">Portal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Overlay for Mobile Menu -->
+    <div class="overlay" id="overlay"></div>
+
+
+   
+
+        <section id="blog-container" class="animate fade-in">
+        <div class="blogs blogpost">
+
+        <div class="post animate slide-left">
+            <img src="./Images/kindergarten kid on graduation.jpg" alt="">
+            <h3 class="animate slide-up">Current Schools Affairs</h3>
+            <p class="animate slide-right">We are excited to announce our upcoming Graduation Ceremony, a special event to celebrate the hard work, achievements, and bright futures of our learners. Families and friends are warmly invited to join us in honoring this milestone as we prepare our students to step confidently into the next chapter of their journey. This day is more than just a celebration—it is a reflection of the growth, resilience, and determination that our students have shown throughout their academic journey.
+                <br><br>
+                At Lakewood Schools, graduation is a cherished tradition that marks the transition from one stage of learning to the next. It is a time to acknowledge not only academic accomplishments but also the personal growth and character development that our students have embraced. From the youngest learners completing early years to those stepping into junior and senior school, each graduate represents the success of our commitment to holistic education
+                <br><br>
+                This year's ceremony promises to be both memorable and inspiring. With performances, student reflections, and words of encouragement from our educators, the event will highlight the values that make Lakewood Schools a nurturing and empowering environment. We invite our school community to join us as we celebrate the achievements of our students and look forward with pride to the promising futures that lie ahead.
+                <br><br>
+                Graduation is also a time to look forward. For many of our students, it marks the beginning of a new academic journey—whether that be moving into the next level of the Competency-Based Curriculum (CBC), joining a Cambridge pathway, or stepping into secondary school. The ceremony reminds us that education is not only about what has been achieved but also about the exciting possibilities that lie ahead.
+                <br><br>
+                As we prepare for this special day, we extend our heartfelt gratitude to the parents, guardians, and the entire Lakewood community for their unwavering support. Together, we have created an environment where learners thrive, values are instilled, and lifelong friendships are formed. The Graduation Ceremony is not only a celebration of the students' success but also a recognition of the teamwork and unity that define Lakewood Schools
+                <br><br>
+                We warmly welcome all families and friends to join us for this milestone occasion. Let us celebrate the achievements of our students, honor their dedication, and encourage them as they step into their bright futures with confidence and hope. This will truly be a day to remember—a reflection of the timeless values and vision that guide Lakewood Schools.
+
+            </p>
+           
+            <a href="lifepost.html" class="animate scale-up">Read Next</a>
+        </div>
+
+        </div>
+
+    </section>
+   
+    
+
+
+
+
+
+
+
+
+    
+
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Join the Lakewood Family?</h2>
+            <p>Take the first step towards an exceptional education for your child</p>
+            <div class="hero-buttons">
+                <a href="#apply" class="btn-welcome btn-light">Apply Now</a>
+                <a href="#contact" class="btn-welcome btn-outline">Schedule a Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Lakewood School</h3>
+                    </div>
+                    <p>Excellence in Education Since 1995</p>
+                    <p>Nurturing minds, Building futures</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#about">About Us</a>
+                    <a href="#programs">Academic Programs</a>
+                    <a href="#admissions">Admissions</a>
+                    <a href="#news">News & Events</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Campuses</h3>
+                    <a href="#komarock">Lakewood Komarock</a>
+                    <a href="#premier">Lakewood Premier</a>
+                    <a href="#emerald">Lakewood Emerald</a>
+                    <a href="#girls">Lakewood Senior Girls</a>
+                    <a href="#vantage">Lakewood Vantage</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+                    <p><i class="fa-solid fa-phone"></i> +254 700 000 000</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@lakewoodschool.ac.ke</p>
+                    <p><i class="fa-solid fa-clock"></i> Mon - Fri: 7:30 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lakewood School. All rights reserved. | Designed with excellence</p>
+            </div>
+        </div>
+    </footer>
+
+
+      <!-- Floating WhatsApp Button -->
+  <div class="whatsapp-container">
+    <button class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+    </button>
+
+    <!-- WhatsApp Popup -->
+    <div class="whatsapp-popup" id="whatsappPopup">
+      <div class="popup-header">
+        <strong>How can we help you?</strong>
+        <span id="closePopup">&times;</span>
+      </div>
+      <div class="popup-body">
+        <textarea id="whatsappMessage" placeholder="Type your message..."></textarea>
+        <button id="sendMessage">Chat</button>
+      </div>
+    </div>
+</div>
+
+
+
+     
+
+
+
+
+  
+
+    <!-- JavaScript -->
+    <script src="script.js">
+        
+    </script>
+</body>
+
+
+</html>

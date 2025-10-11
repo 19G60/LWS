@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <!-- Navigation Bar -->
+        <nav class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/WhatsApp Image 2025-09-13 at 16.07.17_c97ed739.jpg" alt="">
+                
+            </a>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <i class="fa-solid fa-bars menu-toggle" id="openMenu"></i>
+
+        <!-- Navigation Links Container -->
+        <div class="nav-links-container" id="navLinks">
+            <!-- Close Menu Icon (Mobile) -->
+            <i class="fa-solid fa-xmark close-menu" id="closeMenu"></i>
+
+            <ul class="nav-links">
+                <!-- Home -->
+                <li class="nav-link-item">
+                    <a href="#">Home</a>
+                </li>
+
+                <!-- About Us with Dropdown -->
+                <li class="nav-link-item">
+                    <a href="#" class="dropdown-toggle">
+                        About Us <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="ourStory.html">Our Story</a></li>
+                        <li class="dropdown-menu-item"><a href="facilities.html">Facilities</a></li>
+                        <li class="dropdown-menu-item"><a href="application.html">Application</a></li>
+                    </ul>
+                </li>
+
+                
+
+                <!-- Campuses with Dropdown -->
+                <li class="nav-link-item">
+                    <a href="#" class="dropdown-toggle">
+                        Campuses <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="lwdKomarock.html">Lakewood School Komarock</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdPremier.html">Lakewood Premier School</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdEmerald.html">Lakewood Emerald</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdSeniorgirls.html">Lakewood Senior Girls</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdVantage.html">Lakewood Vantage</a></li>
+
+                    </ul>
+                </li>
+
+                <!-- Blog -->
+                <li class="nav-link-item">
+                    <a href="blog.html">Blog</a>
+                </li>
+
+                <!-- Contact Us -->
+                <li class="nav-link-item">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+                <!-- Portal -->
+                <li class="nav-link-item">
+                    <a href="portal.html">Portal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Overlay for Mobile Menu -->
+    <div class="overlay" id="overlay"></div>
+
+
+   
+
+    <!-- Main Content -->
+
+        <section id="blog-container" class="animate fade-in">
+        <div class="blogs blogpost">
+
+        <div class="post animate slide-left">
+            <img src="./Images/foodandnutrition.jpg" alt="">
+            <h3>Student Life: Innovation Through Food & Nutrition</h3>
+            <p>
+                At Lakewood Schools, learning comes alive when our students are given the opportunity to explore, create, and present their ideas. Our Grade 6 learners recently impressed the entire school community with a Food & Nutrition science project that combined creativity, health awareness, and scientific understanding.
+                <br><br>
+                The project focused on creating balanced meal plans using locally available foods. Learners researched nutritional values, identified food groups, and worked in teams to design sample meals that were not only healthy but also affordable for families. Some groups even prepared simple dishes, showcasing practical cooking skills alongside scientific knowledge.
+                <br><br>
+                What made this project outstanding was how the students connected classroom lessons to real-life application. They confidently explained the role of proteins, carbohydrates, vitamins, and minerals in supporting a healthy lifestyle, and emphasized why good nutrition is essential for both children and adults. Their ability to combine research, presentation, and teamwork made the showcase both inspiring and educational.
+                <br><br>
+                This project highlighted the strength of the Competency-Based Curriculum (CBC) in developing practical skills, creativity, and critical thinking. We are proud of our Grade 6 learners for showing that science is not just about experiments in a lab, but also about improving lives through informed choices in everyday living.
+                <br><br>
+                At Lakewood Schools, we continue to celebrate projects that nurture curiosity, encourage innovation, and empower our learners to think globally while acting locally.
+
+                
+
+            </p>
+           
+            <a href="eventsandact.html">Read Next</a>
+        </div>
+
+        </div>
+
+    </section>
+   
+    
+
+
+
+
+
+
+
+
+    
+
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Join the Lakewood Family?</h2>
+            <p>Take the first step towards an exceptional education for your child</p>
+            <div class="hero-buttons">
+                <a href="#apply" class="btn-welcome btn-light">Apply Now</a>
+                <a href="#contact" class="btn-welcome btn-outline">Schedule a Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Lakewood School</h3>
+                    </div>
+                    <p>Excellence in Education Since 1995</p>
+                    <p>Nurturing minds, Building futures</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#about">About Us</a>
+                    <a href="#programs">Academic Programs</a>
+                    <a href="#admissions">Admissions</a>
+                    <a href="#news">News & Events</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Campuses</h3>
+                    <a href="#komarock">Lakewood Komarock</a>
+                    <a href="#premier">Lakewood Premier</a>
+                    <a href="#emerald">Lakewood Emerald</a>
+                    <a href="#girls">Lakewood Senior Girls</a>
+                    <a href="#vantage">Lakewood Vantage</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+                    <p><i class="fa-solid fa-phone"></i> +254 700 000 000</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@lakewoodschool.ac.ke</p>
+                    <p><i class="fa-solid fa-clock"></i> Mon - Fri: 7:30 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lakewood School. All rights reserved. | Designed with excellence</p>
+            </div>
+        </div>
+    </footer>
+
+
+      <!-- Floating WhatsApp Button -->
+  <div class="whatsapp-container">
+    <button class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+    </button>
+
+    <!-- WhatsApp Popup -->
+    <div class="whatsapp-popup" id="whatsappPopup">
+      <div class="popup-header">
+        <strong>How can we help you?</strong>
+        <span id="closePopup">&times;</span>
+      </div>
+      <div class="popup-body">
+        <textarea id="whatsappMessage" placeholder="Type your message..."></textarea>
+        <button id="sendMessage">Chat</button>
+      </div>
+    </div>
+</div>
+
+
+
+     
+
+
+
+
+  
+
+    <!-- JavaScript -->
+    <script src="script.js">
+        
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+    
+<style>
+
+    /* Base styles */
+:root {
+    --primary-color: #a081cb;
+    --hover-color: gold;
+    --text-color: #333;
+}
+
+ *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    
+
+    html{
+        font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        color: var(--text-color);
+        text-align: center;
+    }
+
+
+    body{
+    min-height: 100vh;
+    background-image: url(./Images/portalbackground.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-position: right;
+    overflow: hidden;
+    
+}
+
+
+
+
+/* Wrapper and form styles */
+.wrapper{
+    box-sizing: border-box;
+    background-color: var(white);
+    min-height: 100vh;
+    width: max(40%, 600px);
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(15, 28, 33);
+}
+
+form{
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+ form > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+ form label{
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(rgb(168, 114, 215));
+    fill: #a081cb;
+    color:white;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+form input{
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid rgb(151, 139, 169);
+    background-color: rgb(220, 173, 255);
+    transition: 150ms ease;
+}
+
+form input:hover{
+    border: 2px solid rgb(142, 61, 255);
+}
+
+form input:focus{
+    outline: none;
+    border-color: gold;
+}
+
+div:has(input:focus) > label{
+    background-color: black;
+    opacity: 1;
+
+}
+
+form input::placeholder{
+    color: black;
+}
+
+form button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: .85em 4em;
+    background-color: #a081cb;
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 180ms ease;
+}
+
+form button:hover{
+    background-color: gold;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(25, 0, 255);
+    font-size: large;
+    font-weight: bold;
+   
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+ form div.incorrect label{
+    background-color: rgb(246, 90, 90);
+} 
+
+form div .incorrect input{
+    border-color: rgb(246, 90, 90);
+}
+
+/* Add these CSS rules for incorrect inputs/errors */
+.incorrect label {
+    background-color: rgb(246, 90, 90) !important;
+}
+
+.incorrect input {
+    border-color: rgb(246, 90, 90) !important;
+}
+
+#error-message {
+    color: #ff0000;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 769px) {
+    .wrapper {
+        width: 100%;
+        padding: 15px;
+    }
+
+    nav {
+        width: 100%;
+        padding: 15px;
+    }
+
+
+
+
+    nav .navigation ul {
+        position: fixed;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background: rgba(17, 20, 104, 0.95);
+        padding: 40px 0;
+        transition: 0.3s ease;
+    }
+
+     
+    nav .navigation ul.active {
+        right: 0;
+    }
+    
+    nav .navigation ul li {
+        padding: 15px;
+    }
+
+    
+    nav .navigation ul li a {
+        color: white;
+    }
+
+       #menu-btn {
+        display: initial;
+        font-size: 1.5rem;
+    }
+
+        #menu-close {
+        display: initial;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+   
+
+
+    form {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    form input {
+        font-size: 14px;
+    }
+
+    form button {
+        width: 100%;
+        padding: 12px;
+    }
+
+}
+
+
+
+@media (max-width: 475px) {
+    html {
+        font-size: 10px;
+    }
+
+    .wrapper {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    form label {
+        width: 40px;
+        height: 40px;
+    }
+
+    form input {
+        height: 40px;
+        padding: 0.8em;
+    }
+
+    nav img {
+        width: 120px;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1024px) {
+    .wrapper {
+        width: 50%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    nav {
+        width: 50%;
+   }
+}
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+
+<body>
+    <!-- Navigation Bar -->
+        <nav class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/WhatsApp Image 2025-09-13 at 16.07.17_c97ed739.jpg" alt="">
+                
+            </a>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <i class="fa-solid fa-bars menu-toggle" id="openMenu"></i>
+
+        <!-- Navigation Links Container -->
+        <div class="nav-links-container" id="navLinks">
+            <!-- Close Menu Icon (Mobile) -->
+            <i class="fa-solid fa-xmark close-menu" id="closeMenu"></i>
+
+            <ul class="nav-links">
+                <!-- Home -->
+                <li class="nav-link-item">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <!-- About Us with Dropdown -->
+                <li class="nav-link-item">
+                    <a href="#" class="dropdown-toggle">
+                        About Us <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="ourStory.html">Our Story</a></li>
+                        <li class="dropdown-menu-item"><a href="facilities.html">Facilities</a></li>
+                        <li class="dropdown-menu-item"><a href="application.html">Application</a></li>
+                    </ul>
+                </li>
+
+                
+
+                <!-- Campuses with Dropdown -->
+                <li class="nav-link-item">
+                    <a href="#" class="dropdown-toggle">
+                        Campuses <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="lwdKomarock.html">Lakewood School Komarock</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdPremier.html">Lakewood Premier School</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdEmerald.html">Lakewood Emerald</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdSeniorgirls.html">Lakewood Senior Girls</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdVantage.html">Lakewood Vantage</a></li>
+
+                    </ul>
+                </li>
+
+                <!-- Blog -->
+                <li class="nav-link-item">
+                    <a href="blog.html">Blog</a>
+                </li>
+
+                <!-- Contact Us -->
+                <li class="nav-link-item">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+                <!-- Portal -->
+                <li class="nav-link-item">
+                    <a href="portal.html">Portal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Overlay for Mobile Menu -->
+    <div class="overlay" id="overlay"></div>
+
+
+   
+
+    <!--Sign Up-->
+<section id="Signup" class="animate fade-in"> 
+    <div class="wrapper animate scale-up">
+        <h1>Sign Up</h1>
+        <p id="error-message"></p>
+        <form id="form" action="">  <!--The action i for the back-end-->
+        <div>
+            <label for="firstname-input">
+                <i class="fa-solid fa-user"></i>
+            </label>
+            <input required type="text" name="firstname" id="firstname-input" placeholder="FisrtName">
+        </div>
+        <div>
+            <label for="email-input">
+                <i class="fa-solid fa-envelope"></i>
+            </label>
+            <input type="email" name="email" id="email-input" placeholder="Email">
+        </div>
+        <div>
+            <label for="password-input">
+                <i class="fa-solid fa-key"></i>
+            </label>
+            <input required type="password" name="password" id="password-input" placeholder="Password">
+        </div>
+        <div>
+            <label for="repeat-password-input">
+                <i class="fa-solid fa-repeat"></i>
+            </label>
+            
+            <input type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat Password">
+
+        </div>
+        <button type="submit">SignUp</button>
+        </form> 
+        
+        <p>Alraedy have an Account?<a href="portal.html"> Login </a> </p>
+
+    </div>
+
+
+   </section> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="script.js"  defer></script>
+    
+    
+
+    <script>
+// Get form elements
+const form = document.querySelector("#form");
+const emailInput = document.querySelector('#email-input');
+const passwordInput = document.querySelector('#password-input');
+const errorMessage = document.querySelector('#error-message');
+
+// Form submission handler
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Reset error states
+    clearErrorStates();
+    
+    // Validate form
+    const errors = validateLoginForm();
+    
+    if(errors.length > 0) {
+        // Show errors if any
+        showErrors(errors);
+    } else {
+        // Submit form if no errors
+        form.submit();
+    }
+});
+
+// Login form validation
+function validateLoginForm() {
+    const errors = [];
+    
+    // Email validation
+    if(!emailInput.value.trim()) {
+        errors.push('Email is required');
+        markAsIncorrect(emailInput);
+    } else if(!isValidEmail(emailInput.value)) {
+        errors.push('Please enter a valid email');
+        markAsIncorrect(emailInput);
+    }
+    
+    // Password validation
+    if(!passwordInput.value) {
+        errors.push('Password is required');
+        markAsIncorrect(passwordInput);
+    } else if(passwordInput.value.length < 8) {
+        errors.push('Password must be at least 8 characters');
+        markAsIncorrect(passwordInput);
+    }
+    
+    return errors;
+}
+
+// Helper functions
+function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function markAsIncorrect(input) {
+    input.parentElement.classList.add('incorrect');
+}
+
+function clearErrorStates() {
+    // Clear all error states
+    document.querySelectorAll('.incorrect').forEach(el => {
+        el.classList.remove('incorrect');
+    });
+    errorMessage.textContent = '';
+}
+
+function showErrors(errors) {
+    errorMessage.textContent = errors.join('. ');
+}
+
+// Clear errors on input
+[emailInput, passwordInput].forEach(input => {
+    if(input) {
+        input.addEventListener('input', function() {
+            this.parentElement.classList.remove('incorrect');
+            if(errorMessage.textContent) {
+                errorMessage.textContent = '';
+            }
+        });
+    }
+});
+</script>
+   
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+
+      <!-- Floating WhatsApp Button -->
+  <div class="whatsapp-container">
+    <button class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+    </button>
+
+    <!-- WhatsApp Popup -->
+    <div class="whatsapp-popup" id="whatsappPopup">
+      <div class="popup-header">
+        <strong>How can we help you?</strong>
+        <span id="closePopup">&times;</span>
+      </div>
+      <div class="popup-body">
+        <textarea id="whatsappMessage" placeholder="Type your message..."></textarea>
+        <button id="sendMessage">Chat</button>
+      </div>
+    </div>
+</div>
+
+
+
+     
+
+
+
+
+  
+
+    <!-- JavaScript -->
+    <script src="script.js">
+        
+    </script>
+</body>
+
+
+</html>

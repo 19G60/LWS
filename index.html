@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/WhatsApp Image 2025-09-13 at 16.07.17_c97ed739.jpg" alt="">
+                
+            </a>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <i class="fa-solid fa-bars menu-toggle" id="openMenu"></i>
+
+        <!-- Navigation Links Container -->
+        <div class="nav-links-container" id="navLinks">
+            <!-- Close Menu Icon (Mobile) -->
+            <i class="fa-solid fa-xmark close-menu" id="closeMenu"></i>
+
+            <ul class="nav-links">
+                <!-- Home -->
+                <li class="nav-link-item">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <!-- About Us with Dropdown -->
+                <li class="nav-link-item">
+                    <a href="#" class="dropdown-toggle">
+                        About Us <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="ourStory.html">Our Story</a></li>
+                        <li class="dropdown-menu-item"><a href="facilities.html">Facilities</a></li>
+                        <li class="dropdown-menu-item"><a href="application.html">Application</a></li>
+                    </ul>
+                </li>
+
+                
+
+                <!-- Campuses with Dropdown -->
+                <li class="nav-link-item">
+                    <a href="#" class="dropdown-toggle">
+                        Campuses <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="lwdKomarock.html">Lakewood School Komarock</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdPremier.html">Lakewood Premier School</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdEmerald.html">Lakewood Emerald</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdSeniorgirls.html">Lakewood Senior Girls</a></li>
+                        <li class="dropdown-menu-item"><a href="lwdVantage.html">Lakewood Vantage</a></li>
+
+                    </ul>
+                </li>
+
+                <!-- Blog -->
+                <li class="nav-link-item">
+                    <a href="blog.html">Blog</a>
+                </li>
+
+                <!-- Contact Us -->
+                <li class="nav-link-item">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+                <!-- Portal -->
+                <li class="nav-link-item">
+                    <a href="portal.html">Portal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Overlay for Mobile Menu -->
+    <div class="overlay" id="overlay"></div>
+
+
+    <!--Hero-->
+        <!--Hero with Background Slider-->
+    <section id="home" class="hero-slider animate fade-in">
+        <!-- Background Slides -->
+        <div class="slider-background">
+            <div class="slide-background active">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide-background">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide-background">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide-background">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide-background">
+                <div class="slide-overlay"></div>
+            </div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h2 class="animate slide-left">HONOURING GOD THROUGH EXCELLENCE</h2>
+            <p class="animate slide-right">We are committed to nurturing the whole child, academically, spiritually, socially,
+                and physically.</p>
+            <div class="btn animate scale-up">
+                <a href="application.html" class="blue" style="padding: 13px 35px;">Apply Now</a>
+                <a href="ourStory.html" class="yellow">Learn More</a>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <button class="slider-btn prev-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn next-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        
+        <!-- Slide Indicators -->
+        <div class="slide-indicators"></div>
+    </section>
+
+        <!-- Welcome Section -->
+        <!-- Welcome Section -->
+    <section class="welcome section" id="about">
+        <div class="container">
+            <div class="welcome-grid">
+                <div class="welcome-content">
+                    <h2>Welcome to Lakewood School</h2>
+                    <p>At Lakewood School, we believe every child deserves an education that nurtures their unique talents and prepares them for a successful future. Our commitment to academic excellence, combined with a focus on character development, has made us one of Kenya's leading educational institutions.</p>
+                    <p>With over 15 years of experience, five thriving campuses, and a dedicated team of educators, we continue to set the standard for quality education that transforms lives and builds communities.</p>
+                    <a href="facilities.html" class="btn-welcome">Explore Our Programs</a>
+                </div>
+                <div class="welcome-image-slider">
+                    <!-- Image Slides -->
+                    <div class="welcome-image-slide active">
+                        <img src="Images/littlekidsinclass.jpg" alt="Students learning in classroom">
+                    </div>
+                    <div class="welcome-image-slide">
+                        <img src="Images/lwdprekindergartengraduation.jpg" alt="Kindergarten graduation">
+                    </div>
+                    <div class="welcome-image-slide">
+                        <img src="Images/classroomchairs.jpg" alt="Modern classroom">
+                    </div>
+                    <div class="welcome-image-slide">
+                        <img src="Images/guidance.jpg" alt="Student guidance">
+                    </div>
+                    
+                    <!-- Slider Controls -->
+                    <button class="welcome-image-prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="welcome-image-next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    
+                    <!-- Slide Indicators -->
+                    <div class="welcome-image-indicators"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Programs Section-->
+    <section class="programs section" id="programs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Pillars</h2>
+                <p>At Lakewood Schools, our pillars guide everything we do, shaping our identity and driving our mission to nurture well-rounded, future-ready learners.</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="Images/lwdprekindergartengraduation.jpg" alt="Early Years">
+                    </div>
+                    <div class="program-content">
+                        <h3>Remarkable Academic Growth</h3>
+                        <p>We are committed to nurturing learners who consistently achieve remarkable academic growth through innovative teaching, personalized support, and a culture of continuous improvement.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="images/guidance.jpg" alt="Primary School">
+                    </div>
+                    <div class="program-content">
+                        <h3>Pastoral Care</h3>
+                        <p>We prioritize the well-being of every learner through dedicated pastoral care that fosters emotional growth, moral guidance, and a supportive school community.</p>
+                        
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="images/impact swimming image.jpg" alt="Secondary School">
+                    </div>
+                    <div class="program-content">
+                        <h3>Affordability</h3>
+                        <p>We are dedicated to providing quality, holistic education that remains accessible and affordable to all families without compromising on excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!--FOR FUTURE USE PURPOSES WHEN NEED ARISE-->
+
+
+    <!-- Features Section 
+    <section class="features section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Lakewood School?</h2>
+                <p>Discover what makes us the preferred choice for parents and students across Kenya</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3>Academic Excellence</h3>
+                    <p>Consistent top performance in national examinations with a curriculum that challenges and inspires students to reach their full potential.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>Expert Faculty</h3>
+                    <p>Highly qualified and passionate teachers committed to providing personalized attention and mentorship to every student.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3>Modern Facilities</h3>
+                    <p>State-of-the-art classrooms, science labs, libraries, sports facilities, and technology-enabled learning environments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Holistic Development</h3>
+                    <p>Balanced education that nurtures academic, social, emotional, and physical growth through diverse co-curricular activities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3>Proven Track Record</h3>
+                    <p>Over 10,000 successful alumni making positive impacts in various fields across the globe.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h3>Safe Environment</h3>
+                    <p>Secure, nurturing campuses where students feel valued, respected, and empowered to learn and grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Programs Section 
+    <section class="programs section" id="programs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Academic Programs</h2>
+                <p>Comprehensive education from early childhood to secondary level</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600" alt="Early Years">
+                    </div>
+                    <div class="program-content">
+                        <h3>Early Years (Pre-Primary)</h3>
+                        <p>A nurturing foundation for lifelong learning through play-based education, developing social skills and curiosity in ages 3-5.</p>
+                        <a href="#apply" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600" alt="Primary School">
+                    </div>
+                    <div class="program-content">
+                        <h3>Primary School (Grade 1-8)</h3>
+                        <p>Building strong academic foundations with the CBC curriculum, fostering critical thinking, creativity, and essential life skills.</p>
+                        <a href="#apply" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600" alt="Secondary School">
+                    </div>
+                    <div class="program-content">
+                        <h3>Secondary School (Form 1-4)</h3>
+                        <p>Preparing students for national examinations and university with rigorous academics, leadership development, and career guidance.</p>
+                        <a href="#apply" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Parents & Students Say</h2>
+                <p>Hear from our community about their Lakewood experience</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"Lakewood School has been transformational for our daughter. The teachers genuinely care about each child's success, and the facilities are outstanding. We couldn't be happier with our choice."</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/GraceW.png" alt="Parent">
+                        </div>
+                        <div class="author-info">
+                            <h4>Grace Wanjiru</h4>
+                            <p>Parent, Grade 6 Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"The holistic approach to education at Lakewood helped me discover my passion for science. The labs and supportive teachers made all the difference in my academic journey."</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/alumni2.jpg" alt="Student">
+                        </div>
+                        <div class="author-info">
+                            <h4>David Barazer</h4>
+                            <p>Alumni, Class of 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"From sports to music to academics, Lakewood provides endless opportunities for growth. My son has thrived here and developed confidence beyond our expectations."</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/samwel.png" alt="Parent">
+                        </div>
+                        <div class="author-info">
+                            <h4>Samwel Wangaza</h4>
+                            <p>Parent, Grade 9 Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Join the Lakewood Family?</h2>
+            <h2 style="color: black;">Enroll your child today for our free kindergarten registration and admission, with free lunch and transport provided exclusively for kindergarten students!</h2>
+            <p>Take the first step towards an exceptional education for your child</p>
+            <div class="hero-buttons">
+                <a href="#apply" class="btn-welcome btn-light">Apply Now</a>
+                <a href="#contact" class="btn-welcome btn-outline">Schedule a Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Lakewood School</h3>
+                    </div>
+                    <p>Excellence in Education Since 2009</p>
+                    <p>Nurturing minds, Building futures</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/g/17VtfJjfJz/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/share/g/17VtfJjfJz/" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/lakewoodgroupofschools?utm_source=ig_web_button_share_sheet&igsh=MXJ3ZTZyZmRwdWt6bg==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/lakewoodgroupofschools?utm_source=ig_web_button_share_sheet&igsh=MXJ3ZTZyZmRwdWt6bg==" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="ourStory.html">About Us</a>
+                    <a href="facilities.html">Academic Programs</a>
+                    <a href="application.html">Admissions</a>
+                    <a href="blog.html">News & Events</a>
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Campuses</h3>
+                    <a href="lwdKomarock.html">Lakewood Komarock</a>
+                    <a href="lwdPremier.html">Lakewood Premier</a>
+                    <a href="lwdEmerald.html">Lakewood Emerald</a>
+                    <a href="lwdSeniorgirls.html">Lakewood Senior Girls</a>
+                    <a href="lwdVantage.html">Lakewood Vantage</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+                    <p><i class="fa-solid fa-phone"></i> +254718 161 385</p>
+                    <p><i class="fa-solid fa-envelope"></i> lakewdschool@gmail.com</p>
+                    <p><i class="fa-solid fa-clock"></i> Mon - Fri: 7:30 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 powered by <a href="https://www.instagram.com/19godfidence/?__pwa=1" style="color: blueviolet;">GodFiTech Media Solution</a>. All rights reserved. | Designed with excellence</p>
+            </div>
+        </div>
+    </footer>
+
+
+      <!-- Floating WhatsApp Button -->
+  <div class="whatsapp-container">
+    <button class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+    </button>
+
+    <!-- WhatsApp Popup -->
+    <div class="whatsapp-popup" id="whatsappPopup">
+      <div class="popup-header">
+        <strong>How can we help you?</strong>
+        <span id="closePopup">&times;</span>
+      </div>
+      <div class="popup-body">
+        <textarea id="whatsappMessage" placeholder="Type your message..."></textarea>
+        <button id="sendMessage">Chat</button>
+      </div>
+    </div>
+</div>
+
+
+
+     
+
+
+
+
+  
+
+    <!-- JavaScript -->
+    <script src="script.js">
+        
+    </script>
+</body>
+
+
+</html>
