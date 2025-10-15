@@ -730,7 +730,7 @@
 
 /* About Page Styles*/
 #homeOurStory{
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/lwdPremierFrontgate.jpg);
+    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/aboutushero.JPG);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -1171,6 +1171,10 @@ text-align: center;
     color: white;
 }
 
+
+
+
+
 #map{
     width: 100%;
     height: 70vh;
@@ -1182,6 +1186,59 @@ text-align: center;
     height: 100%;
 
 }
+
+
+
+/* Start Button Section (CSS) */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.school-btn {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 24px;
+    background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    border: 1px solid rgba(45, 87, 217, 0.2);
+    border-radius: 8px;
+    color: #2d57d9;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(45, 87, 217, 0.1);
+}
+
+.school-btn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(145deg, #2d57d9, #2448b8);
+    color: white;
+    box-shadow: 0 4px 12px rgba(45, 87, 217, 0.2);
+    border-color: transparent;
+}
+
+.school-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(45, 87, 217, 0.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .btn-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .school-btn {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+/* End Button Section (CSS) */
 
 
 /*facilities*/
@@ -1342,7 +1399,7 @@ text-align: center;
 /* Komarock home hero section*/
 
 #homeKomarock{
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/bmxriders2.jpg);
+    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/creativeart.JPG);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -2624,7 +2681,7 @@ text-align: center;
 }
 
 #homeOurStory .slide-background:nth-child(3) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/transport.jpg');
+    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/transport5.jpg');
 }
 
 #homeOurStory .slide-background:nth-child(4) {
@@ -2632,7 +2689,7 @@ text-align: center;
 }
 
 #homeOurStory .slide-background:nth-child(5) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/kindergartenchoir.jpg');
+    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/lablesson1.jpg');
 }
 
 #homeOurStory .slide-background.active {
@@ -2856,7 +2913,7 @@ text-align: center;
 }
 
 #homeFacilities .slide-background:nth-child(5) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/PLAYROOM2.webp');
+    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/football.jpg');
 }
 
 #homeFacilities .slide-background.active {
@@ -3104,15 +3161,15 @@ text-align: center;
 }
 
 #homeApp .slide-background:nth-child(3) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/application-slide-3.jpg');
+    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/COMPKIDSLESSON.JPG');
 }
 
 #homeApp .slide-background:nth-child(4) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/application-slide-4.jpg');
+    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/Graduation.jpg');
 }
 
 #homeApp .slide-background:nth-child(5) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/application-slide-5.jpg');
+    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/photography.jpg');
 }
 
 #homeApp .slide-background.active {
@@ -3380,7 +3437,7 @@ text-align: center;
 }
 
 #blog-home .slide-background:nth-child(4) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/toycarride.jpg');
+    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/extracurriculumBouncing.jpg');
 }
 
 #blog-home .slide-background:nth-child(5) {
@@ -4444,7 +4501,7 @@ text-align: center;
 
 /* Base slider styles */
 .image-slider {
-    width: 35%;
+    width: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 8px;
@@ -4453,7 +4510,7 @@ text-align: center;
 
 .slider-container {
     position: relative;
-    width: 100%;
+    width: 100%;      /*review*/
     height: 100%;
 }
 
@@ -4525,7 +4582,7 @@ text-align: center;
 .dot {
     height: 12px;
     width: 12px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(37, 53, 120, 0.489);
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
@@ -4536,122 +4593,7 @@ text-align: center;
     background-color: white;
 }
 
-/* Responsive Slider Adjustments */
-@media (max-width: 1024px) {
-    .image-slider {
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
-    }
 
-    .slide img {
-        height: 400px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-    
-    .slider-btn {
-        width: 45px;
-        height: 45px;
-        background: rgba(255, 255, 255, 0.9);
-    }
-    
-    .slider-dots {
-        bottom: 20px;
-    }
-    
-    .dot {
-        width: 12px;
-        height: 12px;
-        margin: 0 6px;
-    }
-}
-
-@media (max-width: 768px) {
-    .slide img {
-        height: 350px;
-    }
-    
-    .slider-btn {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .slider-btn i {
-        font-size: 1.2rem;
-    }
-    
-    .dot {
-        width: 10px;
-        height: 10px;
-        margin: 0 5px;
-    }
-    
-    .slider-dots {
-        bottom: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .slide img {
-        height: 250px;
-    }
-    
-    .slider-btn {
-        width: 35px;
-        height: 35px;
-        transform: translateY(-50%);
-    }
-    
-    .slider-btn i {
-        font-size: 1rem;
-    }
-    
-    .prev-btn {
-        left: 10px;
-    }
-    
-    .next-btn {
-        right: 10px;
-    }
-    
-    .slider-dots {
-        bottom: 12px;
-        gap: 4px;
-    }
-    
-    .dot {
-        width: 8px;
-        height: 8px;
-        margin: 0 4px;
-    }
-}
-
-@media (max-width: 320px) {
-    .slide img {
-        height: 200px;
-    }
-    
-    .slider-btn {
-        width: 30px;
-        height: 30px;
-    }
-    
-    .slider-btn i {
-        font-size: 0.9rem;
-    }
-    
-    .dot {
-        width: 6px;
-        height: 6px;
-        margin: 0 3px;
-    }
-    
-    .slider-dots {
-        bottom: 10px;
-    }
-}
 
 
 
@@ -4969,7 +4911,7 @@ text-align: center;
 
 
 
-/* WhatsApp Floating Button and Popup Styles */
+/* WhatsApp Floating Button and Popup Styles CURRENTLY IN USE ON THE HUB PAGE
 .whatsapp-container {
     position: fixed;
     bottom: 30px;
@@ -5065,7 +5007,7 @@ text-align: center;
     background: #128C7E;
 }
 
-/* Responsive Breakpoints */
+/* Responsive Breakpoints 
 @media screen and (max-width: 1024px) {
     .whatsapp-container {
         bottom: 25px;

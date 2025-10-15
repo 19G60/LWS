@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <title>My Web Page</title>
+    <title>Lakewood Group of Schools | Best Competency Based-Curriculum School in Kenya</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="APP.CSS">
 </head>
 
 
@@ -19,7 +20,7 @@
         <!-- Logo -->
         <div class="nav-logo">
             <a href="index.html">
-                <img src="images/WhatsApp Image 2025-09-13 at 16.07.17_c97ed739.jpg" alt="">
+                <img src="images/logo.jpg" alt="">
                 
             </a>
         </div>
@@ -79,7 +80,11 @@
 
                 <!-- Portal -->
                 <li class="nav-link-item">
-                    <a href="portal.html">Portal</a>
+                    <a href="https://portal.shuleone.co.ke/">Students/Parents Portal</a>
+                </li>
+
+                <li class="nav-link-item">
+                    <a href="https://app.shuleone.co.ke/">Teachers & Admin Portal</a>
                 </li>
             </ul>
         </div>
@@ -109,7 +114,7 @@
             <br>
             <h6>Our Approach to Curriculum Delivery</h6>
             <p class="animate slide-left">
-             At Lakewood Komarock Schools, we take pride in offering a dynamic, learner-centered approach that nurtures every child’s potential from <strong>Kindergarten to Grade 9.</strong> Guided by the Competency-Based Curriculum (CBC), our program blends academic excellence with holistic development, emphasizing creativity, critical thinking, and practical learning. Our classrooms are enriched with modern digital learning tools alongside engaging resources such as educational toys, flashcards, charts, and creative cutouts — all designed to inspire active participation, collaboration, and curiosity. With dedicated teachers, interactive lessons, and technology-integrated learning experiences, we empower our learners to build confidence, independence, and strong character while achieving remarkable academic growth and preparing for lifelong success in a digital world.
+             At Lakewood Emerald School, we embrace an innovative approach to CBC education in Kenya, where learning is active, creative, and student-centered. Our vibrant classrooms, advanced learning tools, and supportive environment encourage curiosity and collaboration. Guided by passionate teachers, learners engage in real-world problem-solving and practical experiences that build competence and confidence. We strive to nurture adaptable, ethical, and future-ready individuals equipped for success in an ever-changing world.
             </p>
 
 
@@ -235,9 +240,34 @@
 
 
         </div>
+        <!-- ===== SLIDER 1: TEACHING & LEARNING SLIDER ===== -->
         <div class="learn-img animate slide-right" style="margin-top: 40px;">
-            <img src="./Images/copmlab2.jpg" alt="">
+            <div id="teachingSlider" class="image-slider">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slide active">
+                            <img src="./Images/complab1.jpg" alt="Science lab lesson">
+                        </div>
+                        <div class="slide">
+                            <img src="./Images/inclassgrade7.jpg" alt="Interactive classroom">
+                        </div>
+                        <div class="slide">
+                            <img src="./Images/lablesson2.jpg" alt="Digital learning">
+                        </div>
+                    </div>
+                    <!-- ===== SLIDER NAVIGATION BUTTONS ===== -->
+                    <button class="slider-btn prev-btn" onclick="changeTeachingSlide(-1)">&#10094;</button>
+                     <button class="slider-btn next-btn" onclick="changeTeachingSlide(1)">&#10095;</button>
+                    <!-- ===== SLIDER DOTS INDICATOR ===== -->
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="currentTeachingSlide(0)"></span>
+                        <span class="dot" onclick="currentTeachingSlide(1)"></span>
+                        <span class="dot" onclick="currentTeachingSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- ===== END SLIDER 1: TEACHING & LEARNING ===== -->
     </div>
 
 </section>
@@ -247,15 +277,42 @@
  <section id="theHub" style="margin-top: 40px;" class="animate fade-in">
     <div class="learn-container">
 
-         <div class="learn-img animate slide-right" style="margin-top: 40px;">
-            <img src="./Images/pastoralcaresession2.jpg" alt="">
+       
+         <!-- SLIDER 2: Pastoral Care -->
+  <div class="learn-img animate slide-right" style="margin-top: 40px;">
+            <div id="pastoralSlider" class="image-slider">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slide active">
+                            <img src="./Images/pastoralcaresession2.jpg" alt="Pastoral care session">
+                        </div>
+                        <div class="slide">
+                            <img src="./Images/toycarride.jpg" alt="Student counseling">
+                        </div>
+                        <div class="slide">
+                            <img src="./Images/pastoralcaresession1.png" alt="Student wellness activities">
+                             </div>
+                    </div>
+                    <!-- ===== SLIDER NAVIGATION BUTTONS ===== -->
+                    <button class="slider-btn prev-btn" onclick="changePastoralSlide(-1)">&#10094;</button>
+                    <button class="slider-btn next-btn" onclick="changePastoralSlide(1)">&#10095;</button>
+                    <!-- ===== SLIDER DOTS INDICATOR ===== -->
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="currentPastoralSlide(0)"></span>
+                        <span class="dot" onclick="currentPastoralSlide(1)"></span>
+                        <span class="dot" onclick="currentPastoralSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
         <div class="learn">
             <h5>Pastoral Care</h5>
             <hr>
             
             <p class="animate slide-left">
-                we understand that the transition from home to school can be a significant step, especially for our younger learners. That’s why we provide a warm, nurturing environment that supports every child’s emotional and social well-being. Our pastoral care system ensures that each learner feels valued, safe, and supported throughout their school journey. With a dedicated team of compassionate and qualified teachers, we offer consistent guidance, active listening, and emotional support — fostering positive relationships between learners, teachers, and parents, and helping every child feel a true sense of belonging within the Lakewood family.
+              Lakewood Emerald School places the well-being of each learner at the heart of our educational mission. Our pastoral care approach combines empathy, communication, and collaboration to nurture confidence and character. With trained teachers who care deeply about each child’s growth, we ensure that every learner feels safe, supported, and empowered to thrive both in and out of the classroom.
             </p>
 
         </div>
@@ -273,7 +330,7 @@
             <hr>
             
             <p class="animate slide-left">
-               At Lakewood Komarock Schools, we believe learning goes beyond the classroom. Our vibrant co-curricular program gives learners opportunities to explore their passions, develop talents, and build confidence for life.
+              We celebrate every learner’s unique gifts through a diverse range of extracurricular activities. Whether in sports, performing arts, innovation clubs, or community service, our learners gain practical skills, teamwork experience, and self-discipline — all essential for success in school and beyond.
             <br><br>
             <em>Each learner is expected to choose at least one off the following programs. 
            </em>
@@ -316,9 +373,36 @@
         </div>
        
         
-         <div class="learn-img animate slide-right" style="margin-top: 40px;">
-            <img src="./Images/BIKERIDERS.JPG" alt="">
+          <!-- ===== SLIDER 3: EXTRACURRICULAR ACTIVITIES SLIDER ===== -->
+        <div class="learn-img animate slide-right" style="margin-top: 40px;">
+            <div id="extracurricularSlider" class="image-slider">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slide active">
+                            <img src="./Images/bmxriders.jpg" alt="Student skating">
+                        </div>
+                        <div class="slide">
+                            <img src="./Images/aiAndRobotic.jpg" alt="Sports activities">
+                        </div>
+                        <div class="slide">
+                            <img src="./Images/salsa kinder.jpg" alt="Music and drama">
+                        </div>
+                    </div>
+                    <!-- ===== SLIDER NAVIGATION BUTTONS ===== -->
+                    <button class="slider-btn prev-btn" onclick="changeExtracurricularSlide(-1)">&#10094;</button>
+                    <button class="slider-btn next-btn" onclick="changeExtracurricularSlide(1)">&#10095;</button>
+                    <!-- ===== SLIDER DOTS INDICATOR ===== -->
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="currentExtracurricularSlide(0)"></span>
+                        <span class="dot" onclick="currentExtracurricularSlide(1)"></span>
+                        <span class="dot" onclick="currentExtracurricularSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
     </div>
 
 </section>
@@ -328,15 +412,42 @@
     <div class="learn-container">
 
 
+        <!-- ===== SLIDER 4: COMMUNITY ENGAGEMENT SLIDER ===== -->
         <div class="learn-img animate slide-right" style="margin-top: 40px;">
-            <img src="./Images/event.jpg" alt="">
+            <div id="communitySlider" class="image-slider">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slide active">
+                            <img src="./Images/culturalevent.jpg" alt="Community engagement">
+                        </div>
+                        <div class="slide">
+                            <img src="./Images/athletics.jpg" alt="Parent-teacher meeting">
+                        </div>
+                        <div class="slide">
+                            <img src="./Images/communityen3.jpg" alt="Community service">
+                        </div>
+                    </div>
+                    <!-- ===== SLIDER NAVIGATION BUTTONS ===== -->
+                    <button class="slider-btn prev-btn" onclick="changeCommunitySlide(-1)">&#10094;</button>
+                    <button class="slider-btn next-btn" onclick="changeCommunitySlide(1)">&#10095;</button>
+                    <!-- ===== SLIDER DOTS INDICATOR ===== -->
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="currentCommunitySlide(0)"></span>
+                        <span class="dot" onclick="currentCommunitySlide(1)"></span>
+                        <span class="dot" onclick="currentCommunitySlide(2)"></span>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- ===== END SLIDER 4: COMMUNITY ENGAGEMENT ===== -->
+
+
         <div class="learn">
             <h5>Community Engagement</h5>
             <hr>
             
             <p class="animate slide-left">
-                At Lakewood Komarock Schools, we value the power of community in shaping a child’s learning journey. We actively partner with parents and the local community to build meaningful connections and foster a supportive environment that enriches every learner’s growth and well-being.
+              At Lakewood Emerald School, we foster strong community partnerships in Kenya through active parent involvement, local outreach, and collaborative events. Our intentional engagement connects families, learners, and the wider community—creating a supportive network that enriches every child’s educational journey and personal growth.
             </p>
 
                       <div class="accordion">   
@@ -374,6 +485,10 @@
     <section id="documents" class="animate fade-in">
 
         <div class="all-doc">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdI4AbJ1lLhAhfNEE0jYiYJzBrEkDoDdPshy6yJNJZnTSGPVw/viewform?usp=dialog">
+                    <h1>Submit an Application</h1>
+                </a> 
+
               <div class="doc-text">
                  <h1>Essential Documents</h1>
               </div>
@@ -400,7 +515,7 @@
             <p>Take the first step towards an exceptional education for your child</p>
             <div class="hero-buttons">
                 <a href="application.html" class="btn-welcome btn-light">Apply Now</a>
-                <a href="#" class="btn-welcome btn-outline">Schedule a Visit</a>
+                <a href="contact.html" class="btn-welcome btn-outline">Schedule a Visit</a>
             </div>
         </div>
     </section>

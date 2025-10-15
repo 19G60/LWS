@@ -1097,11 +1097,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
-
 // SLIDER FUNCTIONALITY - Add to your existing script.js file
 
 // Teaching & Learning Slider
