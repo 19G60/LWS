@@ -85,7 +85,7 @@ const closePopup = document.getElementById("closePopup");
 const sendMessage = document.getElementById("sendMessage");
 const messageBox = document.getElementById("whatsappMessage");
 
- const phoneNumber = "254745100005"; 
+ const phoneNumber = "254718161389"; 
 
   // Toggle popup
   whatsappBtn.addEventListener("click", () => {
