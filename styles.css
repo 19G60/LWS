@@ -268,7 +268,7 @@
 
 
 #home{
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/hero\ img.jpg);
+    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(102, 102, 152, 0.7)), url(./Images/hero\ img.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -1399,7 +1399,7 @@ text-align: center;
 /* Komarock home hero section*/
 
 #homeKomarock{
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/creativeart.JPG);
+    background-image:  url(./Images/creativeart.JPG);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -1477,7 +1477,7 @@ text-align: center;
 /* lwd Premier home hero section*/
 
 #homeKomarock1{
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/lwdpremier.JPG);
+    background-image:  url(./Images/lwdpremier.JPG);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -1555,7 +1555,7 @@ text-align: center;
 /*EMERALD*/
 
 #homeKomarock2{
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/Emerald.jpg);
+    background-image: url(./Images/Emerald.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -1631,7 +1631,7 @@ text-align: center;
 
 
 #homeKomarock3{
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/bmxriders2.jpg);
+    background-image: url(./Images/bmxriders2.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -1708,7 +1708,7 @@ text-align: center;
 /*Senior Girls */
 
 #homeKomarock4{
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/senior\ girlsuilding.jpg);
+    background-image: url(./Images/senior\ girlsuilding.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -1786,7 +1786,7 @@ text-align: center;
 /* vantage*/
 
 #homeKomarock5{
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url(./Images/vantagebuilding.jpg);
+    background-image: url(./Images/vantagebuilding.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -2399,23 +2399,23 @@ text-align: center;
 }
 
 .slide-background:nth-child(1) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/home-slide-1.jpg');
+    background-image: url('./Images/home-slide-1.jpg');
 }
 
 .slide-background:nth-child(2) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/impact\ swimming\ image.jpg');
+    background-image:  url('./Images/impact\ swimming\ image.jpg');
 }
 
 .slide-background:nth-child(3) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/kidsdoingnumbers2.webp');
+    background-image: url('./Images/kidsdoingnumbers2.webp');
 }
 
 .slide-background:nth-child(4) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/SANDPITKIDS.webp');
+    background-image: url('./Images/SANDPITKIDS.webp');
 }
 
 .slide-background:nth-child(5) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/salsa\ kinder.jpg');
+    background-image: url('./Images/salsa\ kinder.jpg');
 }
 
 
@@ -2449,7 +2449,7 @@ text-align: center;
 
 .hero-content p {
     width: 100%;
-    color: #ddd;
+    color: #000000;
     font-size: 0.9rem;
     letter-spacing: 1px;
     line-height: 25px;
@@ -2673,23 +2673,23 @@ text-align: center;
 }
 
 #homeOurStory .slide-background:nth-child(1) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/about-us-slide-1.jpg');
+    background-image:  url('./Images/about-us-slide-1.jpg');
 }
 
 #homeOurStory .slide-background:nth-child(2) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/adultpool.jpg');
+    background-image:  url('./Images/adultpool.jpg');
 }
 
 #homeOurStory .slide-background:nth-child(3) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/transport5.jpg');
+    background-image:  url('./Images/transport5.jpg');
 }
 
 #homeOurStory .slide-background:nth-child(4) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/PE4.webp');
+    background-image:  url('./Images/PE4.webp');
 }
 
 #homeOurStory .slide-background:nth-child(5) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/lablesson1.jpg');
+    background-image: url('./Images/lablesson1.jpg');
 }
 
 #homeOurStory .slide-background.active {
@@ -2897,23 +2897,23 @@ text-align: center;
 }
 
 #homeFacilities .slide-background:nth-child(1) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/athletics.jpg');
+    background-image:  url('./Images/athletics.jpg');
 }
 
 #homeFacilities .slide-background:nth-child(2) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/sciencelab.jpg');
+    background-image: url('./Images/sciencelab.jpg');
 }
 
 #homeFacilities .slide-background:nth-child(3) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/bmxriders2.jpg');
+    background-image:  url('./Images/bmxriders2.jpg');
 }
 
 #homeFacilities .slide-background:nth-child(4) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/desk3.jpg');
+    background-image:  url('./Images/desk3.jpg');
 }
 
 #homeFacilities .slide-background:nth-child(5) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/football.jpg');
+    background-image:  url('./Images/football.jpg');
 }
 
 #homeFacilities .slide-background.active {
@@ -3153,23 +3153,23 @@ text-align: center;
 }
 
 #homeApp .slide-background:nth-child(1) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/application-slide-1.jpg');
+    background-image:  url('./Images/application-slide-1.jpg');
 }
 
 #homeApp .slide-background:nth-child(2) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/kindergartenclass.jpg');
+    background-image:  url('./Images/kindergartenclass.jpg');
 }
 
 #homeApp .slide-background:nth-child(3) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/COMPKIDSLESSON.JPG');
+    background-image:  url('./Images/COMPKIDSLESSON.JPG');
 }
 
 #homeApp .slide-background:nth-child(4) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/Graduation.jpg');
+    background-image:  url('./Images/Graduation.jpg');
 }
 
 #homeApp .slide-background:nth-child(5) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/photography.jpg');
+    background-image:  url('./Images/photography.jpg');
 }
 
 #homeApp .slide-background.active {
@@ -3425,23 +3425,23 @@ text-align: center;
 }
 
 #blog-home .slide-background:nth-child(1) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/about\ us\ premier\ pic.webp');
+    background-image:  url('./Images/about\ us\ premier\ pic.webp');
 }
 
 #blog-home .slide-background:nth-child(2) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/nurseblog.png');
+    background-image:  url('./Images/nurseblog.png');
 }
 
 #blog-home .slide-background:nth-child(3) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/littlekidsinclass2.JPG');
+    background-image: url('./Images/littlekidsinclass2.JPG');
 }
 
 #blog-home .slide-background:nth-child(4) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/extracurriculumBouncing.jpg');
+    background-image:  url('./Images/extracurriculumBouncing.jpg');
 }
 
 #blog-home .slide-background:nth-child(5) {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.5), rgba(5, 4, 46, 0.7)), url('./Images/KaribuTena.jpg');
+    background-image:  url('./Images/KaribuTena.jpg');
 }
 
 #blog-home .slide-background.active {
