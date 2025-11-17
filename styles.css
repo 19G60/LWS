@@ -1473,9 +1473,26 @@ text-align: center;
   
 }
 
+/* Responsive height adjustments VIDEO ELEMENT */
+@media (max-width: 1024px) {
+    #homeKomarock1 { height: 88vh; min-height: 480px; }
+    #homeKomarock1 .back-video { width: 130%; height: 130%; }
+}
 
-/* lwd Premier home hero section*/
+@media (max-width: 768px) {
+    #homeKomarock1 { height: 75vh; min-height: 420px; margin-top: 64px; padding: 0 1.25rem; }
+    #homeKomarock1 .back-video { width: 150%; height: 150%; filter: saturate(0.95) contrast(0.95) brightness(0.98); }
+}
 
+@media (max-width: 480px) {
+    #homeKomarock1 { height: 65vh; min-height: 320px; margin-top: 56px; padding: 0 0.9rem; }
+    #homeKomarock1 .back-video { width: 180%; height: 180%; transform: translate(-50%, -52%); }
+    
+    /* Hide pointer-events none not applied to hero links - keep video non-interactive on small screens */
+}
+
+
+/*LWD Premier */
 #homeKomarock1{
     background-image:  url(./Images/lwdpremier.JPG);
     height: 100vh;
@@ -1493,6 +1510,25 @@ text-align: center;
     font-size: 25px;
     text-shadow: black;
 }
+
+/* The video element: cover area, centered, and non-interfering with overlay/content */
+#homeKomarock1 .back-video,
+#homeKomarock1 #heroVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;             /* slightly larger to avoid edge gaps on scale */
+    height: 120%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;       /* critical: preserve aspect and fill container */
+    object-position: center;
+    z-index: 1;
+    pointer-events: none;    /* allow clicks to pass to hero controls/links */
+    filter: saturate(0.98) contrast(0.98); /* subtle visual tuning */
+}
+
+
+
 
 #homeKomarock1 h2{
     color: #fff;
