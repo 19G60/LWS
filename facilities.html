@@ -1,475 +1,585 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-
+  <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W3FKQB9R');</script>
-<!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-W3FKQB9R");
+    </script>
+    <!-- End Google Tag Manager -->
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="To_DG79Iz6pUmjQacbb7N9Ed-XCVpXoB1cEYZnM4kJY" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <title>Lakewood Group of Schools | Best Competency Based-Curriculum school in Kenya</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="APP.CSS">
-</head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="To_DG79Iz6pUmjQacbb7N9Ed-XCVpXoB1cEYZnM4kJY"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Lakewood Group of Schools | Best Competency Based-Curriculum school in
+      Kenya
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="APP.CSS" />
+  </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17687138294"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=AW-17687138294"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'AW-17687138294');
-</script>
-<body>
-        <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3FKQB9R"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    gtag("config", "AW-17687138294");
+  </script>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-W3FKQB9R"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Navigation Bar -->
-       <nav class="nav-container">
-        <!-- Logo -->
-        <div class="nav-logo">
-            <a href="index.html">
-                <img src="Images/logo.jpg" alt="">
-                
+    <nav class="nav-container">
+      <!-- Logo -->
+      <div class="nav-logo">
+        <a href="index.html">
+          <img src="Images/logo.jpg" alt="" />
+        </a>
+      </div>
+
+      <!-- Hamburger Menu Icon -->
+      <i class="fa-solid fa-bars menu-toggle" id="openMenu"></i>
+
+      <!-- Navigation Links Container -->
+      <div class="nav-links-container" id="navLinks">
+        <!-- Close Menu Icon (Mobile) -->
+        <i class="fa-solid fa-xmark close-menu" id="closeMenu"></i>
+
+        <ul class="nav-links">
+          <!-- Home -->
+          <li class="nav-link-item">
+            <a href="index.html">Home</a>
+          </li>
+
+          <!-- About Us with Dropdown -->
+          <li class="nav-link-item">
+            <a href="#" class="dropdown-toggle">
+              About Us <i class="fa-solid fa-chevron-down"></i>
             </a>
-        </div>
-
-        <!-- Hamburger Menu Icon -->
-        <i class="fa-solid fa-bars menu-toggle" id="openMenu"></i>
-
-        <!-- Navigation Links Container -->
-        <div class="nav-links-container" id="navLinks">
-            <!-- Close Menu Icon (Mobile) -->
-            <i class="fa-solid fa-xmark close-menu" id="closeMenu"></i>
-
-            <ul class="nav-links">
-                <!-- Home -->
-                <li class="nav-link-item">
-                    <a href="index.html">Home</a>
-                </li>
-
-                <!-- About Us with Dropdown -->
-                <li class="nav-link-item">
-                    <a href="#" class="dropdown-toggle">
-                        About Us <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-menu-item"><a href="ourStory.html">Our Story</a></li>
-                        <li class="dropdown-menu-item"><a href="facilities.html">Facilities</a></li>
-                        <li class="dropdown-menu-item"><a href="application.html">Application</a></li>
-                    </ul>
-                </li>
-
-                
-
-                <!-- Campuses with Dropdown -->
-                <li class="nav-link-item">
-                    <a href="#" class="dropdown-toggle">
-                        Campuses <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-menu-item"><a href="lwdKomarock.html">Lakewood School Komarock</a></li>
-                        <li class="dropdown-menu-item"><a href="lwdPremier.html">Lakewood Premier School</a></li>
-                        <li class="dropdown-menu-item"><a href="lwdEmerald.html">Lakewood Emerald</a></li>
-                        <li class="dropdown-menu-item"><a href="lwdSeniorgirls.html">Lakewood Senior Girls</a></li>
-                        <li class="dropdown-menu-item"><a href="lwdVantage.html">Lakewood Vantage</a></li>
-
-                    </ul>
-                </li>
-
-                <!-- Blog -->
-                <li class="nav-link-item">
-                    <a href="blog.html">Blog</a>
-                </li>
-
-                <!-- Contact Us -->
-                <li class="nav-link-item">
-                    <a href="contact.html">Contact Us</a>
-                </li>
-
-                <!-- Portal -->
-                <li class="nav-link-item">
-                    <a href="https://portal.shuleone.co.ke/">Students/Parents Portal</a>
-                </li>
-
-                <li class="nav-link-item">
-                    <a href="https://app.shuleone.co.ke/">Teachers & Admin Portal</a>
-                </li>
+            <ul class="dropdown-menu">
+              <li class="dropdown-menu-item">
+                <a href="ourStory.html">Our Story</a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="facilities.html">Facilities</a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="application.html">Application</a>
+              </li>
             </ul>
-        </div>
+          </li>
+
+          <!-- Campuses with Dropdown -->
+          <li class="nav-link-item">
+            <a href="#" class="dropdown-toggle">
+              Campuses <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-menu-item">
+                <a href="lwdKomarock.html">Lakewood School Komarock</a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="lwdPremier.html">Lakewood Premier School</a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="lwdEmerald.html">Lakewood Emerald</a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="lwdSeniorgirls.html">Lakewood Senior Girls</a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="lwdVantage.html">Lakewood Vantage</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Blog -->
+          <li class="nav-link-item">
+            <a href="blog.html">Blog</a>
+          </li>
+
+          <!-- Contact Us -->
+          <li class="nav-link-item">
+            <a href="contact.html">Contact Us</a>
+          </li>
+
+          <!-- Portal -->
+          <li class="nav-link-item">
+            <a href="https://portal.shuleone.co.ke/">Students/Parents Portal</a>
+          </li>
+
+          <li class="nav-link-item">
+            <a href="https://app.shuleone.co.ke/">Teachers & Admin Portal</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <!-- Overlay for Mobile Menu -->
     <div class="overlay" id="overlay"></div>
 
-
     <!--Hero-->
-        <!--Hero-->
+    <!--Hero-->
     <section id="homeFacilities" class="hero-slider animate fade-in">
-        <!-- Replace the image paths below with your preferred images for this page -->
-        <div class="slider-background">
-            <div class="slide-background active">
-                <div class="slide-overlay"></div>
-            </div>
-            <div class="slide-background">
-                <div class="slide-overlay"></div>
-            </div>
-            <div class="slide-background">
-                <div class="slide-overlay"></div>
-            </div>
-            <div class="slide-background">
-                <div class="slide-overlay"></div>
-            </div>
-            <div class="slide-background">
-                <div class="slide-overlay"></div>
-            </div>
+      <!-- Replace the image paths below with your preferred images for this page -->
+      <div class="slider-background">
+        <div class="slide-background active">
+          <div class="slide-overlay"></div>
         </div>
-        
-        <!-- Hero Content -->
-        <div class="hero-content">
-            <h2 class="animate slide-left">World-Class Facilities for Inspired Learning</h2>
-            <div class="btn animate scale-up">
-                <a href="application.html" class="blue" style="padding: 13px 35px;">Apply Now</a>
-                <a href="blog.html" class="yellow">Learn More</a>
-            </div>
+        <div class="slide-background">
+          <div class="slide-overlay"></div>
         </div>
-        
-        <!-- Slider Controls -->
-        <button class="slider-btn prev-btn">
-            <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button class="slider-btn next-btn">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
-        
-        <!-- Slide Indicators -->
-        <div class="slide-indicators"></div>
+        <div class="slide-background">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-background">
+          <div class="slide-overlay"></div>
+        </div>
+        <div class="slide-background">
+          <div class="slide-overlay"></div>
+        </div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <h2 class="animate slide-left">
+          World-Class Facilities for Inspired Learning
+        </h2>
+        <div class="btn animate scale-up">
+          <a href="application.html" class="blue" style="padding: 13px 35px"
+            >Apply Now</a
+          >
+          <a href="blog.html" class="yellow">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <button class="slider-btn prev-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="slider-btn next-btn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <!-- Slide Indicators -->
+      <div class="slide-indicators"></div>
     </section>
 
     <!-- Facilities Section -->
 
- <section id="theHub" style="margin-top: 40px;" class="animate fade-in">
-    <div class="learn-container">
+    <section id="theHub" style="margin-top: 40px" class="animate fade-in">
+      <div class="learn-container">
         <div class="learn">
-            <h5>Where Quality Education Meets Outstanding Facilities</h5>
-            <hr>
-            
-            <p class="animate slide-left">
-                At Lakewood Schools, we believe that a strong learning environment goes hand in hand with excellent facilities. Our modern classrooms, well-equipped laboratories, libraries, and ICT hubs foster curiosity and innovation. Spacious playgrounds, sports grounds, and creative art spaces ensure that learners grow holistically—mentally, physically, and socially. Reliable and safe school transport services further enhance accessibility and convenience for our learners. Every facility is designed to provide comfort, safety, and inspiration, creating an environment where students can thrive.
-            </p>
+          <h5>Where Quality Education Meets Outstanding Facilities</h5>
+          <hr />
 
+          <p class="animate slide-left">
+            At Lakewood Schools, we believe that a strong learning environment
+            goes hand in hand with excellent facilities. Our modern classrooms,
+            well-equipped laboratories, libraries, and ICT hubs foster curiosity
+            and innovation. Spacious playgrounds, sports grounds, and creative
+            art spaces ensure that learners grow holistically—mentally,
+            physically, and socially. Reliable and safe school transport
+            services further enhance accessibility and convenience for our
+            learners. Every facility is designed to provide comfort, safety, and
+            inspiration, creating an environment where students can thrive.
+          </p>
         </div>
-        <div class="learn-img-slider animate slide-right" style="margin-top: 40px;">
-            <!-- Image Slides -->
-            <div class="learn-img-slide active">
-                <img src="Images/transport3.jpg" alt="School Transport">
-            </div>
-            <div class="learn-img-slide">
-                <img src="Images/labpic.jpg" alt="Science Laboratory">
-            </div>
-            <div class="learn-img-slide">
-                <img src="Images/bikers1.JPG" alt="School Library">
-            </div>
-            <div class="learn-img-slide">
-                <img src="Images/PLAYROOM2.webp" alt="Playroom">
-            </div>
-            <div class="learn-img-slide">
-                <img src="Images/desk3.jpg" alt="Modern Classroom">
-            </div>
-            <div class="learn-img-slide">
-                <img src="Images/copmlab2.jpg" alt="Swimming Pool">
-            </div>
-            
-            <!-- Slider Controls -->
-            <button class="learn-img-prev-btn">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="learn-img-next-btn">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-            
-            <!-- Slide Indicators -->
-            <div class="learn-img-indicators"></div>
+        <div
+          class="learn-img-slider animate slide-right"
+          style="margin-top: 40px"
+        >
+          <!-- Image Slides -->
+          <div class="learn-img-slide active">
+            <img src="Images/transport3.jpg" alt="School Transport" />
+          </div>
+          <div class="learn-img-slide">
+            <img src="Images/labpic.jpg" alt="Science Laboratory" />
+          </div>
+          <div class="learn-img-slide">
+            <img src="Images/bikers1.JPG" alt="School Library" />
+          </div>
+          <div class="learn-img-slide">
+            <img src="Images/PLAYROOM2.webp" alt="Playroom" />
+          </div>
+          <div class="learn-img-slide">
+            <img src="Images/desk3.jpg" alt="Modern Classroom" />
+          </div>
+          <div class="learn-img-slide">
+            <img src="Images/copmlab2.jpg" alt="Swimming Pool" />
+          </div>
+
+          <!-- Slider Controls -->
+          <button class="learn-img-prev-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="learn-img-next-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <!-- Slide Indicators -->
+          <div class="learn-img-indicators"></div>
         </div>
-    </div>
-
-    
-</section>
-
-
-
-
-
-
-<!-- Programmes Section with Slider -->
-<section id="theHub" style="margin-top: 40px;" class="animate fade-in">
-    <div class="learn-container">
-        <!-- Programmes Image Slider -->
-        <div class="programmes-img-slider animate slide-right" style="margin-top: 40px;">
-            <!-- Image Slides for Programmes -->
-            <div class="programmes-img-slide active">
-                <img src="Images/aiAndRobotic.jpg" alt="AI and Robotics Program">
-            </div>
-            <div class="programmes-img-slide">
-                <img src="Images/inclassgrade9.jpg" alt="Early Years Learning">
-            </div>
-            <div class="programmes-img-slide">
-                <img src="Images/swimming1.jpg" alt="Student Guidance and Counseling">
-            </div>
-            <div class="programmes-img-slide">
-                <img src="Images/scouts1.jpg" alt="Modern Classroom Environment">
-            </div>
-            <div class="programmes-img-slide">
-                <img src="Images/kidsdoingnumbers2.webp" alt="Mathematics Learning">
-            </div>
-            
-            <!-- Slider Controls -->
-            <button class="programmes-img-prev-btn">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="programmes-img-next-btn">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-            
-            <!-- Slide Indicators -->
-            <div class="programmes-img-indicators"></div>
-        </div>
-        
-        <div class="learn">
-            <h5>Programmes</h5>
-            <hr>
-            
-            <p class="animate slide-left">
-                Lakewood Schools offers a wide range of programmes designed to nurture every learner's potential. From foundational learning in early years to advanced levels in primary and secondary, we integrate both the Competency-Based Curriculum (CBC) and global best practices. Our programmes are enriched with co-curricular activities—sports, music, drama, AI and robotics, environmental clubs, and entrepreneurship—that empower learners with essential life skills. Each programme is crafted to support academic excellence, character formation, and holistic growth.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Extracurricular Activities Section with Slider -->
-<section id="theHub" style="margin-top: 40px;" class="animate fade-in">
-    <div class="learn-container">
-        <div class="learn">
-            <h5>Extracurricular Activities</h5>
-            <hr>
-            
-            <p class="animate slide-left">
-                At Lakewood Schools, we believe that education goes beyond the classroom. Our extracurricular programmes give learners opportunities to discover and nurture their unique talents, build confidence, and develop teamwork. From drama, music, and debate to robotics, sports, environmental clubs, and journalism, our learners engage in enriching activities that complement their academics. These experiences empower students to apply knowledge in real-life situations, explore their passions, and grow into well-rounded individuals.
-            </p>
-        </div>
-        
-        <!-- Extracurricular Image Slider -->
-        <div class="extracurricular-img-slider animate slide-right" style="margin-top: 40px;">
-            <!-- Image Slides for Extracurricular -->
-            <div class="extracurricular-img-slide active">
-                <img src="Images/impact swimming image.jpg" alt="Swimming Activities">
-            </div>
-            <div class="extracurricular-img-slide">
-                <img src="Images/PE4.webp" alt="Physical Education">
-            </div>
-            <div class="extracurricular-img-slide">
-                <img src="Images/kindergartenchoir.jpg" alt="Music and Choir">
-            </div>
-            <div class="extracurricular-img-slide">
-                <img src="Images/photography.jpg" alt="Playground Activities">
-            </div>
-            <div class="extracurricular-img-slide">
-                <img src="Images/SANDPITKIDS.webp" alt="Creative Play">
-            </div>
-            
-            <!-- Slider Controls -->
-            <button class="extracurricular-img-prev-btn">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="extracurricular-img-next-btn">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-            
-            <!-- Slide Indicators -->
-            <div class="extracurricular-img-indicators"></div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Events Section with Slider -->
-<section id="theHub" style="margin-top: 40px;" class="animate fade-in">
-    <div class="learn-container">
-        <!-- Events Image Slider -->
-        <div class="events-img-slider animate slide-right" style="margin-top: 40px;">
-            <!-- Image Slides for Events -->
-            <div class="events-img-slide active">
-                <img src="Images/event.jpg" alt="School Event">
-            </div>
-            <div class="events-img-slide">
-                <img src="Images/lwdprekindergartengraduation.jpg" alt="Graduation Ceremony">
-            </div>
-            <div class="events-img-slide">
-                <img src="Images/salsa kinder.jpg" alt="Cultural Events">
-            </div>
-            <div class="events-img-slide">
-                <img src="Images/event1.jpg" alt="Sports Events">
-            </div>
-            <div class="events-img-slide">
-                <img src="Images/hall.jpg" alt="School Assembly">
-            </div>
-            
-            <!-- Slider Controls -->
-            <button class="events-img-prev-btn">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="events-img-next-btn">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-            
-            <!-- Slide Indicators -->
-            <div class="events-img-indicators"></div>
-        </div>
-        
-        <div class="learn">
-            <h5>Events</h5>
-            <hr>
-            
-            <p class="animate slide-left">
-                Lakewood Schools is a vibrant community where learning is celebrated beyond the classroom. Throughout the year, we host events that bring together learners, parents, and the wider community. From graduation ceremonies, talent shows, and cultural days to sports tournaments, academic exhibitions, and career fairs, every event is designed to inspire growth, showcase talent, and strengthen bonds. Our events not only celebrate achievement but also provide learners with platforms to explore, innovate, and shine.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-<!--Important Documents-->
-
-
-    <section id="documents" class="animate fade-in">
-
-        <div class="all-doc">
-              <div class="doc-text">
-                 <h1>Essential Documents</h1>
-              </div>
-
-                <div class="doc-btns animate slide-up">
-                    <a href="./file/admissionform.pdf" class="feestr" download="">
-                        Admission Form 
-                    </a>
-                    <!--<a href="./file/FEES  STRUCTURE 2025.pdf" class="feestr" download="">
-                        Fee Structure
-                    </a>-->
-                    
-                </div>
-
-        </div>
-        
+      </div>
     </section>
 
-         <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Join the Lakewood Family?</h2>
-            <h2 style="color: black;">Enroll your child today for our <em style="color: greenyellow;">free PlayGroup</em> registration and admission, with free lunch and transport provided exclusively for PlayGroup students!</h2>
-            <p>Take the first step towards an exceptional education for your child</p>
-            <div class="hero-buttons">
-                <a href="application.html" class="btn-welcome btn-light">Apply Now</a>
-                <a href="contact.html" class="btn-welcome btn-outline">Schedule a Visit</a>
-            </div>
+    <!-- Programmes Section with Slider -->
+    <section id="theHub" style="margin-top: 40px" class="animate fade-in">
+      <div class="learn-container">
+        <!-- Programmes Image Slider -->
+        <div
+          class="programmes-img-slider animate slide-right"
+          style="margin-top: 40px"
+        >
+          <!-- Image Slides for Programmes -->
+          <div class="programmes-img-slide active">
+            <img
+              src="Images/RoboticsBoyGirl.png"
+              alt="AI and Robotics Program"
+            />
+          </div>
+          <div class="programmes-img-slide">
+            <img src="Images/inclassgrade9.jpg" alt="Early Years Learning" />
+          </div>
+          <div class="programmes-img-slide">
+            <img
+              src="Images/swimming1.jpg"
+              alt="Student Guidance and Counseling"
+            />
+          </div>
+          <div class="programmes-img-slide">
+            <img src="Images/scouts1.jpg" alt="Modern Classroom Environment" />
+          </div>
+          <div class="programmes-img-slide">
+            <img
+              src="Images/kidsdoingnumbers2.webp"
+              alt="Mathematics Learning"
+            />
+          </div>
+
+          <!-- Slider Controls -->
+          <button class="programmes-img-prev-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="programmes-img-next-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <!-- Slide Indicators -->
+          <div class="programmes-img-indicators"></div>
         </div>
+
+        <div class="learn">
+          <h5>Programmes</h5>
+          <hr />
+
+          <p class="animate slide-left">
+            Lakewood Schools offers a wide range of programmes designed to
+            nurture every learner's potential. From foundational learning in
+            early years to advanced levels in primary and secondary, we
+            integrate both the Competency-Based Curriculum (CBC) and global best
+            practices. Our programmes are enriched with co-curricular
+            activities—sports, music, drama, AI and robotics, environmental
+            clubs, and entrepreneurship—that empower learners with essential
+            life skills. Each programme is crafted to support academic
+            excellence, character formation, and holistic growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extracurricular Activities Section with Slider -->
+    <section id="theHub" style="margin-top: 40px" class="animate fade-in">
+      <div class="learn-container">
+        <div class="learn">
+          <h5>Extracurricular Activities</h5>
+          <hr />
+
+          <p class="animate slide-left">
+            At Lakewood Schools, we believe that education goes beyond the
+            classroom. Our extracurricular programmes give learners
+            opportunities to discover and nurture their unique talents, build
+            confidence, and develop teamwork. From drama, music, and debate to
+            robotics, sports, environmental clubs, and journalism, our learners
+            engage in enriching activities that complement their academics.
+            These experiences empower students to apply knowledge in real-life
+            situations, explore their passions, and grow into well-rounded
+            individuals.
+          </p>
+        </div>
+
+        <!-- Extracurricular Image Slider -->
+        <div
+          class="extracurricular-img-slider animate slide-right"
+          style="margin-top: 40px"
+        >
+          <!-- Image Slides for Extracurricular -->
+          <div class="extracurricular-img-slide active">
+            <img
+              src="Images/impact swimming image.jpg"
+              alt="Swimming Activities"
+            />
+          </div>
+          <div class="extracurricular-img-slide">
+            <img src="Images/PE4.webp" alt="Physical Education" />
+          </div>
+          <div class="extracurricular-img-slide">
+            <img src="Images/kindergartenchoir.jpg" alt="Music and Choir" />
+          </div>
+          <div class="extracurricular-img-slide">
+            <img src="Images/photography.jpg" alt="Playground Activities" />
+          </div>
+          <div class="extracurricular-img-slide">
+            <img src="Images/SANDPITKIDS.webp" alt="Creative Play" />
+          </div>
+
+          <!-- Slider Controls -->
+          <button class="extracurricular-img-prev-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="extracurricular-img-next-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <!-- Slide Indicators -->
+          <div class="extracurricular-img-indicators"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section with Slider -->
+    <section id="theHub" style="margin-top: 40px" class="animate fade-in">
+      <div class="learn-container">
+        <!-- Events Image Slider -->
+        <div
+          class="events-img-slider animate slide-right"
+          style="margin-top: 40px"
+        >
+          <!-- Image Slides for Events -->
+          <div class="events-img-slide active">
+            <img src="Images/event.jpg" alt="School Event" />
+          </div>
+          <div class="events-img-slide">
+            <img
+              src="Images/lwdprekindergartengraduation.jpg"
+              alt="Graduation Ceremony"
+            />
+          </div>
+          <div class="events-img-slide">
+            <img src="Images/salsa kinder.jpg" alt="Cultural Events" />
+          </div>
+          <div class="events-img-slide">
+            <img src="Images/event1.jpg" alt="Sports Events" />
+          </div>
+          <div class="events-img-slide">
+            <img src="Images/hall.jpg" alt="School Assembly" />
+          </div>
+
+          <!-- Slider Controls -->
+          <button class="events-img-prev-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="events-img-next-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <!-- Slide Indicators -->
+          <div class="events-img-indicators"></div>
+        </div>
+
+        <div class="learn">
+          <h5>Events</h5>
+          <hr />
+
+          <p class="animate slide-left">
+            Lakewood Schools is a vibrant community where learning is celebrated
+            beyond the classroom. Throughout the year, we host events that bring
+            together learners, parents, and the wider community. From graduation
+            ceremonies, talent shows, and cultural days to sports tournaments,
+            academic exhibitions, and career fairs, every event is designed to
+            inspire growth, showcase talent, and strengthen bonds. Our events
+            not only celebrate achievement but also provide learners with
+            platforms to explore, innovate, and shine.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Important Documents-->
+
+    <section id="documents" class="animate fade-in">
+      <div class="all-doc">
+        <div class="doc-text">
+          <h1>Essential Documents</h1>
+        </div>
+
+        <div class="doc-btns animate slide-up">
+          <a href="./file/admissionform.pdf" class="feestr" download="">
+            Admission Form
+          </a>
+          <!--<a href="./file/FEES  STRUCTURE 2025.pdf" class="feestr" download="">
+                        Fee Structure
+                    </a>-->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Join the Lakewood Family?</h2>
+        <h2 style="color: black">
+          Enroll your child today for our
+          <em style="color: greenyellow">free PlayGroup</em> registration and
+          admission, with free lunch and transport provided exclusively for
+          PlayGroup students!
+        </h2>
+        <p>
+          Take the first step towards an exceptional education for your child
+        </p>
+        <div class="hero-buttons">
+          <a href="application.html" class="btn-welcome btn-light">Apply Now</a>
+          <a href="contact.html" class="btn-welcome btn-outline"
+            >Schedule a Visit</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <h3>Lakewood School</h3>
-                    </div>
-                    <p>Excellence in Education Since 2010</p>
-                    <p>Nurturing minds, Building futures</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/g/17VtfJjfJz/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.facebook.com/share/g/17VtfJjfJz/" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/lakewoodgroupofschools?utm_source=ig_web_button_share_sheet&igsh=MXJ3ZTZyZmRwdWt6bg==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.instagram.com/lakewoodgroupofschools?utm_source=ig_web_button_share_sheet&igsh=MXJ3ZTZyZmRwdWt6bg==" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <a href="ourStory.html">About Us</a>
-                    <a href="facilities.html">Academic Programs</a>
-                    <a href="application.html">Admissions</a>
-                    <a href="blog.html">News & Events</a>
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Our Campuses</h3>
-                    <a href="lwdKomarock.html">Lakewood Komarock</a>
-                    <a href="lwdPremier.html">Lakewood Premier</a>
-                    <a href="lwdEmerald.html">Lakewood Emerald</a>
-                    <a href="lwdSeniorgirls.html">Lakewood Senior Girls</a>
-                    <a href="lwdVantage.html">Lakewood Vantage</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
-                    <p><i class="fa-solid fa-phone"></i> 0715176479 / 0715208219</p>
-                    <p><i class="fa-solid fa-envelope"></i> lakewoodvantage@gmail.com</p>
-                    <p><i class="fa-solid fa-clock"></i> Mon - Fri: 7:30 AM - 5:00 PM</p>
-                </div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <h3>Lakewood School</h3>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 powered by <a href="https://www.instagram.com/19godfidence/?__pwa=1" style="color: blueviolet;">GodFiTech Digital Solutions</a>. All rights reserved. | Designed with excellence</p>
+            <p>Excellence in Education Since 2010</p>
+            <p>Nurturing minds, Building futures</p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/share/g/17VtfJjfJz/"
+                aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/share/g/17VtfJjfJz/"
+                aria-label="Twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/lakewoodgroupofschools?utm_source=ig_web_button_share_sheet&igsh=MXJ3ZTZyZmRwdWt6bg=="
+                aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/lakewoodgroupofschools?utm_source=ig_web_button_share_sheet&igsh=MXJ3ZTZyZmRwdWt6bg=="
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
             </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="ourStory.html">About Us</a>
+            <a href="facilities.html">Academic Programs</a>
+            <a href="application.html">Admissions</a>
+            <a href="blog.html">News & Events</a>
+            <a href="index.html">Home</a>
+          </div>
+          <div class="footer-section">
+            <h3>Our Campuses</h3>
+            <a href="lwdKomarock.html">Lakewood Komarock</a>
+            <a href="lwdPremier.html">Lakewood Premier</a>
+            <a href="lwdEmerald.html">Lakewood Emerald</a>
+            <a href="lwdSeniorgirls.html">Lakewood Senior Girls</a>
+            <a href="lwdVantage.html">Lakewood Vantage</a>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+            <p><i class="fa-solid fa-phone"></i> 0715176479 / 0715208219</p>
+            <p>
+              <i class="fa-solid fa-envelope"></i> lakewoodvantage@gmail.com
+            </p>
+            <p>
+              <i class="fa-solid fa-clock"></i> Mon - Fri: 7:30 AM - 5:00 PM
+            </p>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 powered by
+            <a
+              href="https://www.instagram.com/19godfidence/?__pwa=1"
+              style="color: blueviolet"
+              >GodFiTech Digital Solutions</a
+            >. All rights reserved. | Designed with excellence
+          </p>
+        </div>
+      </div>
     </footer>
 
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-container">
+      <button class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+      </button>
 
-      <!-- Floating WhatsApp Button -->
-  <div class="whatsapp-container">
-    <button class="whatsapp-btn">
-      <i class="fab fa-whatsapp"></i>
-    </button>
-
-    <!-- WhatsApp Popup -->
-    <div class="whatsapp-popup" id="whatsappPopup">
-      <div class="popup-header">
-        <strong>How can we help you?</strong>
-        <span id="closePopup">&times;</span>
-      </div>
-      <div class="popup-body">
-        <textarea id="whatsappMessage" placeholder="Type your message..."></textarea>
-        <button id="sendMessage">Chat</button>
+      <!-- WhatsApp Popup -->
+      <div class="whatsapp-popup" id="whatsappPopup">
+        <div class="popup-header">
+          <strong>How can we help you?</strong>
+          <span id="closePopup">&times;</span>
+        </div>
+        <div class="popup-body">
+          <textarea
+            id="whatsappMessage"
+            placeholder="Type your message..."
+          ></textarea>
+          <button id="sendMessage">Chat</button>
+        </div>
       </div>
     </div>
-</div>
-
-
-
-     
-
-
-
-
-  
 
     <!-- JavaScript -->
-    <script src="script.js">
-        
-    </script>
-</body>
-
-
+    <script src="script.js"></script>
+  </body>
 </html>
